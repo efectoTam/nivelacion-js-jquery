@@ -16,6 +16,13 @@ $(document).ready( function(){
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
+	/*if (i=0, i<recipesArray.length, i++){
+		for (highlighted in recipesArray[i]){
+			if (highlighted==true){
+				renderRecipe();
+			}
+		}
+	}*/
 }
 
 /*
@@ -33,9 +40,14 @@ function renderRecipe(recipe) {
 /*
 * Función que se encarga de pintar todas las actividades
 */
-function renderActivities(activitiesArray) {
-	console.log('Activities: ', activitiesArray);
-}
+
+$(document).ready(function(){
+	function renderActivities(activitiesArray) {
+		/*for(i=0; i<activitiesArray[i]; i++){
+			console.log('Activities: ', activitiesArray);
+		}*/
+	}renderActivities();
+});
 
 /*
 * Función que se encarga de pintar una actividad
