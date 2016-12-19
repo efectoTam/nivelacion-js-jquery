@@ -4,10 +4,16 @@ $(document).ready( function(){
 	$(".js-show-recipe").click(function() {
   		alert("Recipe!");
   		$(".page").removeClass("make");
+  		$(".js-show-recipe").addClass("active");
+  		$(".js-show-make").removeClass("active");
+
+
 	});
 	$(".js-show-make").click(function() {
   		alert("Make it!");
   		$(".make").toggle();
   		$(".page").addClass("make");
+  		$(".js-show-make").addClass("active");
+  		$(".js-show-recipe").removeClass("active");
 	});
 });
