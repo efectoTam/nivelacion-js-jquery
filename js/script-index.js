@@ -14,15 +14,14 @@ $(document).ready( function(){
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
-function renderHighlightedRecipes(recipesArray) {
+function renderHighlightedRecipes(recipesArray){
 	console.log('Recipes: ', recipesArray);
-	/*if (i=0, i<recipesArray.length, i++){
-		for (highlighted in recipesArray[i]){
-			if (highlighted==true){
-				renderRecipe();
-			}
+	for (i=0; i<recipesArray.length; i++){
+		if(recipesArray[i].highlighted==true){
+			var lasRecetas = recipesArray[i];
+			renderRecipe(lasRecetas);
 		}
-	}*/
+	}
 }
 
 /*
